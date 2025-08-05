@@ -143,7 +143,8 @@ body {
 
 /*these codes handle the css sprites*/
 .bg-csspt1 {
-    width: 736px; height: 552px;
+    width: 80vw;
+    aspect-ratio: 736/ 552;
     background: url('images/css_sprites.png') -10px -10px;
 }
 
