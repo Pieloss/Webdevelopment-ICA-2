@@ -47,12 +47,16 @@ body {
   margin: 20px auto;
 }
 
+
 @media (max-width: 800px) {
   .page {
     width: 95vw;
     padding: 15px;
   }
   .qr-desktop {
+    display: none;
+  }
+  .spritecontainer {
     display: none;
   }
 }
@@ -142,14 +146,19 @@ body {
 }
 
 /*these codes handle the css sprites*/
+.spritecontainer {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
 .bg-csspt1 {
-    width: 80vw;
-    aspect-ratio: 736/ 552;
+    width: 736px; height: 552px;
     background: url('images/css_sprites.png') -10px -10px;
 }
 
 .bg-csspt2 {
-    width: 80vw;  /* Scales with viewport width */
-    aspect-ratio: 626 / 499;
+    width: 626px; height: 499px;
     background: url('images/css_sprites.png') -766px -10px;
 }
