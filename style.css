@@ -40,10 +40,20 @@ body {
   display: block;
 }
 
+/*showqr on desktop*/
+.qr-desktop {
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+}
+
 @media (max-width: 800px) {
   .page {
     width: 95vw;
     padding: 15px;
+  }
+  .qr-desktop {
+    display: none;
   }
 }
 
