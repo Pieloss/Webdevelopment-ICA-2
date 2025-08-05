@@ -148,6 +148,7 @@ body {
 }
 
 .bg-csspt2 {
-    width: 626px; height: 499px;
+    width: 80vw;  /* Scales with viewport width */
+    aspect-ratio: 626 / 499;
     background: url('images/css_sprites.png') -766px -10px;
 }
