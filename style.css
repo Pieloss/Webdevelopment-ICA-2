@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  animation: bgFade 45s infinite;
+}
+
+/*background image animation*/
+@keyframes bgFade {
+  0%   { background-image: url('images/plane1.jpg'); }
+  33%  { background-image: url('images/heli2.jpg'); }
+  66%  { background-image: url('images/plane3.jpg'); }
+  100% { background-image: url('images/heli1.jpg'); }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.page {
+  display: none;
+  width: 100vw;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+#page1 {
+  min-height: 2100px;
+}
+
+.visible {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .page {
+    width: 95vw;
+    padding: 15px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+
+.button {
+  width: 15vw; 
+  height: 5vh;
+  background: grey;
+  color: white;
+  transition: background-color 0.1s linear;
+}
+
+.button:hover {
+  background: black;
+}
+
+.images {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+/*plane clicker game css code*/
+.clicker-container {
+  text-align: center;
+  padding: 2vh 2vw;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 30px;
+  border-radius: 12px;
+}
+
+.play-area {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 40vh;
+  margin: 0 auto;
+  border: 2px dashed #999;
+  background-color: #eef;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#durianId {
+  position: relative;width:10vw
+}
+
+#stopBtn {
+    background: cyan;
+    width: 100px;
+    transition: background 2s, width 2s
+}
+
+#stopBtn.newstate{
+  background: black;width:400px;
+}
+
+#durianId {
+  position: relative;width:10vw;
+  transition: all 0.5s;
+}
+
+#durianId.shrink{
+  width:5vw;opacity: 0;
+}
+
+@keyframes btnFrames{
+    0%{rotate:0deg}
+    25%{rotate:90deg}
+    50%{rotate:180deg}
+    100%{rotate:270deg}
+}
+
+#stopBtn.rotAnim{
+    animation: btnFrames 5s;
+}
+
+/*these codes handle the css sprites*/
+.bg-csspt1 {
+    width: 736px; height: 552px;
+    background: url('images/css_sprites.png') -10px -10px;
+}
+
+.bg-csspt2 {
+    width: 626px; height: 499px;
+    background: url('images/css_sprites.png') -766px -10px;
+}

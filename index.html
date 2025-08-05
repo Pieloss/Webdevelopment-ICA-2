@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ICA 2 page</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="main.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <main>
+            <div class="button-container">
+            <button onclick="showPage(1)" class="button">Main Page</button>
+            <button onclick="showPage(2)" class="button">Civilian Aircraft</button>
+            <button onclick="showPage(3)" class="button">Military Aircraft</button>
+            </div>
+
+            <div class="wrapper">
+            <section id="page1" class="page visible"> 
+                <h1>The Amazing World Of Aircraft</h1>
+                <h2>Types of Aircraft</h2>
+                <p>Aircraft can be broadly categorized into fixed-wing (airplanes), rotary-wing (helicopters), and lighter-than-air (airships and balloons). Airplane types include commercial airliners (narrow-body, wide-body, and jumbo jets), private jets, cargo planes, and specialized types like amphibious planes and aerobatic planes. Military aircraft are categorized by function as fighters, bombers, and cargo/tanker aircraft. </p>
+                <img src="images/plane1.jpg" alt="plane" title="This is a commercial jet" class="images">
+                <h2>Aircraft Equipment</h2>
+                <p>Aircraft equipment encompasses a wide range of systems and components vital for flight and operation. These can be broadly categorized into the airframe (fuselage, wings, stabilizers, flight controls, and landing gear), the propulsion system (engines and related equipment), and avionics (electrical, electronic, navigation, and communication systems). Understanding these components is crucial for safe and effective aircraft operation.</p>
+                <img src="images/equipment.jpg" alt="aircraft equipment" title="This is some of the equipment systems on a plane" class="images">
+                <p>Military aircraft equipment encompasses a wide range of components and systems essential for flight operations, combat, and support roles. This includes everything from core flight components like engines and control surfaces to specialized avionics, weapons systems, and safety equipment. Aircraft are categorized into various types, including fighters, bombers, transport, and reconnaissance aircraft, each with unique equipment tailored to its function.</p>
+                <img src="images/cockpit.jpg" alt="miltary cockpit" title="This is what the cockpit of a fighter jet looks like" class="images">
+                
+                <div class="clicker-container">
+                    <button id="stopBtn">Stop!</button>
+                    <h1>Plane Clicker</h1>
+                    <p>Click Plane to kill it</p>
+                    <h2 id="scoreBox">score</h2>
+                    <div class="play-area">
+                        <img id="durianId" src="images/tanto.png" alt="plane image">
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="page2" class="page">
+                <h1>Civilian Aircraft</h1>
+                <h2>History of Civilian Aviation</h2>
+                <p>Ever since the first military aircraft cursed the battlefield with their frightful presence there were thoughts of what revolutionary changes such machines could do during peace time</p>
+                <p>The history of civilian aircraft is marked by significant milestones, from early experiments with flight to the widespread use of commercial airliners. The Wright brothers' first successful flight in 1903 laid the foundation for powered, heavier-than-air flight, while the post-World War I era saw the beginnings of commercial aviation. The development of jet airliners in the mid-20th century revolutionized air travel, making long-distance journeys faster and more accessible.</p>
+                <img src="images/plane2.jpg" alt="plane" class="images">
+                <p>Significant moments in civilian aviation history include the Wright brothers' first sustained flight in 1903, the introduction of the Boeing 747 in 1968, the first wide-body airliner, in 1970, and the development of the Concorde, the first commercial supersonic aircraft, which began passenger service in 1976. Other notable events include the first round-the-world flight without refueling in 1986 and the first flight of the Airbus A380, the largest passenger aircraft to date, in 2005.</p>
+                <div class="bg-csspt2"></div>
+            </section>
+
+            <section id="page3" class="page">
+                <h1>Military Aircraft</h1>
+                <img src="images/heli1.jpg" alt="helicopter" class="images">
+                <p>Military aviation evolved from rudimentary reconnaissance aircraft in the early 20th century to sophisticated, high-speed, and technologically advanced fighters, bombers, and other specialized aircraft. Key developments include the transition from biplanes to monoplanes, the introduction of turbojet engines, and the integration of radar, missiles, and stealth technology.</p>
+                <img src="images/plane5.jpg" alt="plane" class="images">
+                <p>Significant moments in military aviation history include the Wright Flyer's first successful flight, the World War I advancements in fighter aircraft, the Battle of Britain, the Bell X-1 breaking the sound barrier, and the introduction of stealth technology. These events represent major leaps in aircraft design, combat tactics, and technological capabilities.</p>
+
+                <h1>MCQ Quiz</h1>
+                    <fieldset>
+                        <legend>1. When did the wright brothers first fly?</legend>
+                            <input type="radio" name="q1" value="1756"> 1756
+                            <input type="radio" name="q1" value="1875"> 1875
+                            <input type="radio" name="q1" value="1903"> 1903
+                            <input type="radio" name="q1" value="1917"> 1917
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. When was the boeing 747 introduced to the public?</legend>
+                            <input type="radio" name="q2" value="1968"> 1968
+                            <input type="radio" name="q2" value="1980"> 1980
+                            <input type="radio" name="q2" value="1890"> 1890
+                            <input type="radio" name="q2" value="1945"> 1945
+                    </fieldset>
+                    <fieldset>
+                        <legend>1. What is a significant moment in military aviation?</legend>
+                            <input type="radio" name="q3" value="bob"> Battle Of Britain
+                            <input type="radio" name="q3" value="8768"> invention of the fritz X
+                            <input type="radio" name="q3" value="1233"> donner hues first flight
+                            <input type="radio" name="q3" value="12321"> The Manila Expo
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. What did military aircraft evolve from?</legend>
+                            <input type="radio" name="q4" value="3421"> hanz gretels flying machine
+                            <input type="radio" name="q4" value="awad"> rudimentary flying "boats"
+                            <input type="radio" name="q4" value="yescorrect"> reconnaissance blimps
+                            <input type="radio" name="q4" value="arvw"> heavier then paper gliders
+                    </fieldset>
+                    <button id="btnSubmit">Submit Quiz</button>
+                    <h3 id="scorebox">Not submitted</h3>
+            </section>
+            </div>
+            
+
+
+
+        </main>
+
+
+    </body>
+
+</html>
